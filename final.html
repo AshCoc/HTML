@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>Div-Slider</title>
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+    
+    <style>
+      body {
+            margin: 0px;
+        }
+      
+      #b1 {
+        background-color: green;
+        height: 100px;    //置中
+        line-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      #b1 h1 {
+         width: 400px;
+         margin: auto; //高度置中
+         color: green;
+         text-align: center;
+      }
+
+    #b2 {
+        height: 50px;
+        background-color: lightgreen;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 600px;
+    }
+    .b2-1 {
+        line-height: 50px;
+    }
+    .b2-1:hover {
+        background-color: rgb(106, 106, 106);
+    }
+    .b2-1 ul {
+        display: none;
+        position: absolute;
+        z-index: 1;            //設定層級
+        background-color: rgb(106, 106, 106);
+        min-width: 100px;
+        list-style-type: none; //移除項目符號
+    }
+    .b2-1:hover ul {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    .b2-1:hover ul li:hover {
+        background-color: white;
+    }
+    .b2-1 li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        padding: 0px 16px;
+    }
+    .b2-1:hover ul li:hover a {
+        color: black;
+    }
+    .slider {
+        background-color: black;
+    }
+
+        #b3 {
+            height: 70px;
+            line-height: 70px;
+            background-color: black;
+        }
+        #b3 h4 {
+            color: white;
+            text-align: center;
+            margin: 0px;
+        }
+
+        #b4 {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0px 20px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border: 1px black solid;
+            }
+
+    </style>
+  </head>
+  <body>
+    <div id='b1'>
+      <h1>味覺挑戰圖鑑</h1>
+    </div>
+    <div id="b2">
+        <div class="b2-1">主食?</div>
+        <div class="b2-1">渴了嗎?</div>
+        <div class="b2-1">更多的
+            <ul>
+                <li><a href="#">舌尖的迷霧區域</a></li>
+                <li><a href="#">調味大師</a></li>
+                <li><a href="#">來點正常的</a></li>
+            </ul>
+        </div>
+
+        <div class="b2-1">其他相關資訊</div>
+    </div>
+    <div class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li><img src="https://github.com/AshCoc/IMGS/blob/main/Parl%20pizza.jpg?raw=true" />
+                </li>
+                <li><img src="https://github.com/AshCoc/IMGS/blob/main/ICE%20ram.jpeg?raw=true" />
+                </li>
+                <li><img src="https://github.com/AshCoc/IMGS/blob/main/NOODLE%20COOKIE.jpg?raw=true" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id='b4'>
+        <img src=https://github.com/AshCoc/IMGS/blob/main/pasta.jpg?raw=true>
+        <img src=https://github.com/AshCoc/IMGS/blob/main/choco%20ice.png?raw=true>
+        <img src=https://github.com/AshCoc/IMGS/blob/main/MC.jpg?raw=true>
+    </div>
+    <div id="b3">
+        <h4>明新資訊管理系 版權所有© All Rights Reserved. Designed and Maintained by IM MUST</h4>
+    </div>
+  </body>
+</html>
+
+
+
